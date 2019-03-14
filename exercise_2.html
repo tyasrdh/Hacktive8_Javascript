@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title >Calculator</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var angkaPertama = parseInt(prompt('Masukkan angka pertama'));
+        var angkaKedua = parseInt(prompt('Masukkan angka kedua'));
+        var operasi = prompt('Pilih operasi yang diinginkan (contoh: + , - , * , / , ^ , min , max) ')
+        var nilai;
+
+        if (operasi == '+'){
+            nilai = angkaPertama + angkaKedua;
+            alert('Hasilnya adalah = ' + nilai);
+        } else if(operasi == '-'){
+            nilai = angkaPertama - angkaKedua;
+            alert('Hasilnya adalah = ' + nilai);
+        } else if(operasi == '*'){
+            nilai = angkaPertama * angkaKedua;
+            alert('Hasilnya adalah = ' + nilai);
+        } else if(operasi == '/'){
+            nilai = angkaPertama / angkaKedua;
+            alert('Hasilnya adalah = ' + nilai);
+        } else if(operasi == '^'){
+            nilai = angkaPertama ^ angkaKedua;
+            alert('Hasilnya adalah = ' + nilai);
+        } else if(operasi == 'min'){
+            nilai = Math.min(angkaPertama, angkaKedua);
+            alert('Hasilnya adalah = ' + nilai);
+        } else if(operasi == 'max'){
+            nilai = Math.max(angkaPertama, angkaKedua);
+            alert('Hasilnya adalah = ' + nilai);
+        } else{
+            alert('Data tidak valid')
+        }
+
+    </script>
+</body>
+</html>
